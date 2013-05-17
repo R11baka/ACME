@@ -35,8 +35,7 @@ public class Main {
 
 
 
-    void run() throws IOException {
-       // in = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
+    void run() throws IOException {       
         in1 = new BufferedReader(new InputStreamReader(System.in));
         out = new PrintWriter(new OutputStreamWriter(System.out));
         solve();
@@ -44,24 +43,14 @@ public class Main {
     }
 
     void solve() throws IOException {
-        //String myLine=in1.readLine();
+       
         String[] data = in1.readLine().split(" ");
         int Number=Integer.parseInt(data[0]);
-        int k=data[1].length();
-      //  System.out.println(Number);
-       // System.out.println(Fac);
-      //  int k=Fac.length();
+        int k=data[1].length();      
         System.out.println(specFac(Number,k));
     }
 
-    int factorial(int i) {
-        if (i == 1) {
-            return 1;
-        } else {
-            return i * factorial(i - 1);
-        }
-
-    }
+  
     int specFac(int i,int k){
         if(k==0) throw new IllegalArgumentException("K must be not  zero");
         int remainder=i%k;
