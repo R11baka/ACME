@@ -1,4 +1,16 @@
 #1079.py
+def memorize(function):
+  memo = {}
+  def wrapper(*args):
+    if args in memo:
+      return memo[args]
+    else:
+      rv = function(*args)
+      memo[args] = rv
+      return rv
+  return wrapper
+  
+@memorize 
 def getNumber(i):
   """" Maximum """	
 	if i==0:
