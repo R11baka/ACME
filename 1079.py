@@ -1,4 +1,4 @@
-#1079.py
+import sys
 def memorize(function):
   memo = {}
   def wrapper(*args):
@@ -10,9 +10,9 @@ def memorize(function):
       return rv
   return wrapper
   
-@memorize 
+@memorize
 def getNumber(i):
-  """" Maximum """	
+	"""" Maximum """	
 	if i==0:
 		return 0
 	elif i==1:
@@ -20,16 +20,29 @@ def getNumber(i):
 	elif i%2==0:
 		return getNumber(i/2)
 	elif i%2==1:
-		return (getNumber(i/2)+getNumber(i/2+1))
+		return (getNumber(i/2)+getNumber(i/2+1))	
 
-def main():
-	n=10
+def print_max_element(n):
 	result=[]
 	for i in range(0,n+1):
 		result.append(getNumber(i))
-	print result
-	print max(result)
-
-
+	return max(result)
+	
+def main():	
+	inputseq=[]	
+	while True:
+		line = int(sys.stdin.readline())
+		if line==0:
+			break
+		else:
+			inputseq.append(line)
+	#calculate
+	#print inputseq
+	for i in inputseq:
+		print 	print_max_element(i)
+	
+	
+	
 if __name__ == "__main__":
     main()
+    
