@@ -8,6 +8,9 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Stack;
 
+/**
+ * @link http://acm.timus.ru/problem.aspx?space=1&num=1654
+ * */
 public class Main {
 
 	/**

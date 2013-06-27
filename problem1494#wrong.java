@@ -3,6 +3,7 @@ import java.util.LinkedList;
 
 
 /**
+ * @link http://acm.timus.ru/problem.aspx?space=1&num=1494
  * @author rubaka
  */
 public class Main {

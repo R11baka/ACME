@@ -2,6 +2,12 @@ import java.io.*;
 import java.util.*;
 
 /**
+ * 
+ *  {@link http://acm.timus.ru/problem.aspx?space=1&num=1083}
+ * 
+ * */
+
+/**
  *
  * @author rubaka
  */

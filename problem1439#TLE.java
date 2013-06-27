@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 /**
- *
+ * @link http://acm.timus.ru/problem.aspx?space=1&num=1439
  * @author rubaka
  */
 public class Main {
