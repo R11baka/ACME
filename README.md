@@ -1,4 +1,5 @@
 ACME
 ====
 
-Чучуть с  [ACME timus](http://acm.timus.ru/)
+Решения некоторых задач с  [ACME timus](http://acm.timus.ru/)
+Ссылки на задачи в файлах решения
